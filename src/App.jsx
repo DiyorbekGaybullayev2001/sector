@@ -1,10 +1,19 @@
 import React from "react";
 import './App.css'
+import Navbar from "./components/navbar";
+import Banner from "./components/banner";
+import Categories from "./components/category";
+import Brands from "./components/brands";
+import ECommerceComponent from "./components/products";
 
 function App() {
   return (
     <>
-      <div className="text-blue-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorem deserunt itaque aperiam molestiae ipsa, suscipit dolor aliquam tenetur voluptatibus?</div>
+      <Navbar/>
+      <Banner/>
+      <Categories/>
+      <Brands/>
+      <ECommerceComponent/>
     </>
   )
 }
