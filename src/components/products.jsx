@@ -117,7 +117,7 @@ const ECommerceComponent = () => {
   const [selectedTab, setSelectedTab] = useState('Рекомендуем');
 
   return (
-    <div className="container mx-auto grid grid-cols-12 gap-4 p-[10px]">
+    <div className=" container mx-auto grid grid-cols-12 gap-4 p-[10px]">
       <aside className="col-span-12 lg:col-span-3 ">
         <Sidebar />
       </aside>
