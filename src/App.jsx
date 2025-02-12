@@ -1,21 +1,24 @@
 import React from "react";
-import './App.css'
+import './App.css';
 import Navbar from "./components/navbar";
-import Banner from "./components/banner";
-import Categories from "./components/category";
-import Brands from "./components/brands";
+import Home from "./components/Home";
 import ECommerceComponent from "./components/products";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Wishes from "./pages/Wishes";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <Banner/>
-      <Categories/>
-      <Brands/>
-      <ECommerceComponent/>
-    </>
-  )
+    <Router>
+      <Navbar />
+     
+      <Routes>
+      <Route path="/" element={<Home/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/wishes" element={<Wishes />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

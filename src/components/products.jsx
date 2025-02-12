@@ -152,7 +152,7 @@ import { FaCopy } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 import { AiOutlineBarChart } from "react-icons/ai";
 import { BsCartPlusFill } from "react-icons/bs";
-
+import { useNavigate } from 'react-router-dom';
 const news = [
   { id: 1, title: 'Новая серия сварочных аппаратов SNR-FS-60x уже на складе', date: '18 апреля 2024 г.' },
   { id: 2, title: 'Читайте статью: Что такое PoE и для чего он нужен?', date: '29 марта 2024 г.' },
@@ -223,29 +223,34 @@ const Sidebar = () => {
   );
 };
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, addToWishlist,addToCart  }) => {
   return (
     <div className="rounded-2xl shadow-lg bg-white relative">
-      {product.isNew && <span className="absolute top-2 left-2 bg-green-300 text-white text-xs px-2 py-1 rounded">Новинка</span>}
       <img src={product.image} alt={product.title} className="w-full h-[200px] object-cover rounded-lg mb-4" />
       <h3 className="text-sm font-semibold mb-1 px-[10px]">{product.title}</h3>
       <p className="text-blue-600 mb-1 px-[10px]">{product.availability}</p>
       <p className="text-lg font-bold mb-2 px-[10px]">{product.price}</p>
       <div className="flex gap-5 mt-2 p-[10px]">
-        <button className="text-gray-500 text-[23px] hover:text-blue-600"><BsCartPlusFill /></button>
+        <button  onClick={() => addToCart(product)} className="text-gray-500 text-[23px] hover:text-blue-600"><BsCartPlusFill /></button>
         <button className="text-gray-500 text-[23px] hover:text-blue-500"><FaCopy /></button>
-        <button className="text-gray-500 text-[23px] hover:text-red-500"><FaRegHeart /></button>
+        <button onClick={() => addToWishlist(product)} className="text-gray-500 text-[23px] hover:text-red-500"><FaRegHeart /></button>
         <button className="text-gray-500 text-[23px] hover:text-blue-600"><AiOutlineBarChart /></button>
       </div>
     </div>
   );
 };
 
-const ProductList = ({ selectedTab }) => {
+const ProductList = ({ selectedTab, addToWishlist, addToCart }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {products[selectedTab].map(product => (
-        <ProductCard key={product.id} product={product} />
+      {products[selectedTab]?.map((product) => (
+     <ProductCard 
+     key={product.id} 
+     product={product} 
+     addToWishlist={addToWishlist}
+     addToCart={addToCart} 
+   />
+   
       ))}
     </div>
   );
@@ -253,10 +258,27 @@ const ProductList = ({ selectedTab }) => {
 
 const ECommerceComponent = () => {
   const [selectedTab, setSelectedTab] = useState('Рекомендуем');
+  const navigate = useNavigate();
+
+  const addToCart = (product) => {
+    const existingCart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (!existingCart.some(item => item.id === product.id)) {
+      const newCart = [...existingCart, product];
+      localStorage.setItem('cart', JSON.stringify(newCart));
+    }
+  };
+
+  const addToWishlist = (product) => {
+    const existingWishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    if (!existingWishlist.some(item => item.id === product.id)) {
+      const newWishlist = [...existingWishlist, product];
+      localStorage.setItem('wishlist', JSON.stringify(newWishlist));
+    }
+  };
 
   return (
     <div className="container mx-auto grid grid-cols-12 gap-4 p-[10px]">
-      <aside className="col-span-12 lg:col-span-3 ">
+      <aside className="col-span-12 lg:col-span-3">
         <Sidebar />
       </aside>
       <main className="col-span-12 lg:col-span-9">
@@ -271,7 +293,12 @@ const ECommerceComponent = () => {
             </button>
           ))}
         </div>
-        <ProductList selectedTab={selectedTab} />
+        <ProductList 
+  selectedTab={selectedTab} 
+  addToWishlist={addToWishlist} 
+  addToCart={addToCart} 
+/>
+
       </main>
     </div>
   );
