@@ -5,6 +5,8 @@ import Banner from "./components/banner";
 import Categories from "./components/category";
 import Brands from "./components/brands";
 import ECommerceComponent from "./components/products";
+import About from "./components/about";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Categories/>
       <Brands/>
       <ECommerceComponent/>
+      <About/>
+      <Footer/>
     </>
   )
 }
