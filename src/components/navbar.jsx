@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Search, User, ShoppingCart, Heart, Percent, MessageSquare, BarChart3, AlignJustify, X } from "lucide-react";
+import { Search, User, ShoppingCart, Heart, Percent, MessageSquare, BarChart3, AlignJustify, X,  } from "lucide-react";
+import { Link } from 'react-router-dom';
 import flag from '../imgs/flag-uzb.png';
 import logo from '../../public/logo.png';
 import { useTranslation } from 'react-i18next';
@@ -46,8 +47,11 @@ function Navbar({ onSearch }) {
               <a href='#' className="flex flex-col items-center">
                 <Percent className="w-5 h-5" /><label className='hidden lg:flex'>{t('promotions')}</label>
               </a>
-              <a href='#' className="flex flex-col items-center">
-                <Heart className="w-5 h-5" /><label className='hidden lg:flex'>{t('favorites')}</label>
+              
+              <a className='flex flex-col items-center cursor-pointer' href='#'>
+              <Link to={'/wishes'}>
+               <Heart className="w-5 h-5" /><label className='hidden lg:flex  cursor-pointer'>Избранное</label>
+               </Link>
               </a>
               <a href='#' className="flex flex-col items-center">
                 <BarChart3 className="w-5 h-5" /><label className='hidden lg:flex'>{t('compare')}</label>
@@ -56,7 +60,9 @@ function Navbar({ onSearch }) {
                 <User className="w-5 h-5" /><label className='hidden lg:flex'>{t('cabinet')}</label>
               </a>
               <a href='#' className="flex flex-col items-center">
-                <ShoppingCart className="w-5 h-5" /><label className='hidden lg:flex'>{t('cart')}</label>
+                <Link to={'/cart'}>
+                <ShoppingCart className="w-5 h-5" /><label className=' cursor-pointer hidden lg:flex'>Корзина</label>
+                </Link>
               </a>
             </div>
             <button className='md:hidden' onClick={() => setIsModalOpen(true)}>
@@ -73,7 +79,7 @@ function Navbar({ onSearch }) {
 
         <nav className="container m-auto p-4 flex justify-between text-sm">
           <div className="flex items-center space-x-4">
-            <select className="bg-blue-600 text-white flex p-[5px] rounded-md items-center">
+            <select className="bg-blue-600 text-white w-full flex p-[5px] rounded-md items-center">
               <option>{t('catalog')}</option>
               <option>{t('ipCameras')}</option>
               <option>{t('sfpModules')}</option>
