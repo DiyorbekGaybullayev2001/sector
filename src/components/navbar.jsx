@@ -2,7 +2,8 @@
 
 
 import React, { useState } from 'react';
-import { Search, User, ShoppingCart, Heart, Percent, MessageSquare, BarChart3, AlignJustify, X } from "lucide-react";
+import { Search, User, ShoppingCart, Heart, Percent, MessageSquare, BarChart3, AlignJustify, X,  } from "lucide-react";
+import { Link } from 'react-router-dom';
 import flag from '../imgs/flag-uzb.png';
 import logo from '../../public/logo.png';
 
@@ -44,8 +45,11 @@ function Navbar({ onSearch }) {
               <a href='#'>
                 <Percent className="w-5 h-5" /><label className='hidden lg:flex'>Акции</label>
               </a>
-              <a href='#'>
-                <Heart className="w-5 h-5" /><label className='hidden lg:flex'>Избранное</label>
+              
+              <a className=' cursor-pointer' href='#'>
+              <Link to={'/wishes'}>
+               <Heart className="w-5 h-5" /><label className='hidden lg:flex  cursor-pointer'>Избранное</label>
+               </Link>
               </a>
               <a href='#'>
                 <BarChart3 className="w-5 h-5" /><label className='hidden lg:flex'>Сравнить</label>
@@ -54,7 +58,9 @@ function Navbar({ onSearch }) {
                 <User className="w-5 h-5" /><label className='hidden lg:flex'>Кабинет</label>
               </a>
               <a href='#'>
-                <ShoppingCart className="w-5 h-5" /><label className='hidden lg:flex'>Корзина</label>
+                <Link to={'/cart'}>
+                <ShoppingCart className="w-5 h-5" /><label className=' cursor-pointer hidden lg:flex'>Корзина</label>
+                </Link>
               </a>
             </div>
             <button className='md:hidden' onClick={() => setIsModalOpen(true)}>
