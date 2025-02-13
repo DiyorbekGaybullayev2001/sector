@@ -49,12 +49,12 @@ function Footer() {
 
                 </div>
 
-                <div className='container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-[20px] text-[#c8c8c8]'>
+                <div className='container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 p-[20px] text-[#c8c8c8]'>
                     <div>
                         <p>© 2022–2025 sectortechnology.uz</p>
                     </div>
                     
-                    <div className='flex'> 
+                    <div className='flex justify-center'> 
                         <FaInstagramSquare className='mx-[10px] text-[22px]'/>
                         <FaTelegram className='mx-[10px] text-[22px]'/>
                         <FaFacebook className='mx-[10px] text-[22px]'/>

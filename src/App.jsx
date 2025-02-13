@@ -11,6 +11,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      {/* <Navbar onSearch={handleSearch} /> */}
      
       <Routes>
       <Route path="/" element={<Home/>}/>

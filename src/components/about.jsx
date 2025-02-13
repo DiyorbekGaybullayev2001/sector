@@ -8,8 +8,8 @@ const About = () => {
     };
 
     return (
-        <div className="p-6 bg-white shadow rounded-2xl m-auto container mt-[100px]">
-            <p className={`text-gray-800 md:text-[18px] leading-relaxed ${isExpanded ? '' : 'line-clamp-6'}`}>
+        <div id='about' className="p-6 bg-white shadow rounded-2xl m-auto container mt-[100px]">
+            <div className={`text-gray-800 md:text-[18px] font-serif leading-relaxed ${isExpanded ? '' : 'line-clamp-6'}`}>
                 Компания «NAG» – надёжный и честный партнёр, предлагающий компаниям телеком-отрасли, промышленности и бизнесу эффективные решения и оборудование для решения широкого круга задач. Мы осуществляем оптовую и розничную продажу компонентов и программно-аппаратных комплексов (ПАК) для развертывания сетевой инфраструктуры, её модернизации и масштабирования.
                 <br />
                 <strong className='text-center text-[28px]'>Наши достижения</strong>
@@ -22,7 +22,7 @@ const About = () => {
                     <li>Собственная торговая марка SNR включает широкий ассортимент оборудования и комплектующих для развертывания проводных сетей передачи данных, систем безопасности и видеонаблюдения, беспроводных сетей и ЦОД.</li>
                     <li>Дочерняя компания «NAGTEX», созданная несколько лет назад, разрабатывает и производит телекоммуникационное оборудование, способное заместить дорогие импортные аналоги.</li>
                 </ul>
-            </p>
+            </div>
             <button 
                 onClick={toggleExpand} 
                 className="mt-4 text-blue-600 hover:underline focus:outline-none">
