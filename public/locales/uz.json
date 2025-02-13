@@ -1,0 +1,162 @@
+{   
+    
+        "catalog": "Mahsulotlar katalogi",
+        "promotions": "Aksiyalar",
+        "favorites": "Sevimlilar",
+        "compare": "Taqqoslash",
+        "cabinet": "Kabinet",
+        "cart": "Savat",
+        "forCustomers": "Xaridorlarga",
+        "services": "Xizmatlar",
+        "aboutUs": "Biz haqimizda",
+        "onlineChat": "Onlayn chat",
+        "popularCategories": "Mashhur kategoriyalar",
+        "fixedSwitches": "Fiksirlangan kommutatorlar",
+        "onlineUPS": "On-line UPS (Elektr zaxirasi)",
+        "ipCameras": "IP Videokameralar",
+        "opticalCable": "Optik kabel FTTH/FTTx",
+        "fiberWeldingMachines": "Optik tolalarni payvandlash moslamalari",
+        "rackServers": "Stellajli serverlar",
+        "corporateRouters": "Korporativ mijozlar uchun marshrutizatorlar",
+        "sfpModules": "SFP modullari",
+        "opticalPatchCords": "Optik patch-kordlar",
+        "wallCabinets": "Telekommunikatsion devor shkaflari",
+        "automationMonitoring": "Avtomatlashtirish va monitoring",
+        "viewFullCatalog": "To'liq katalogni ko'rish",
+        "popularBrands": "Mashhur brendlar",
+        "news": "Yangiliklar",
+        "newWeldingMachines": "Yangi SNR-FS-60x payvandlash moslamalari omborda",
+        "readArticle": "Maqolani o'qing: PoE nima va u nima uchun kerak?",
+        "ourProjects": "Bizning loyihalarimiz",
+        "snrSystems": "snr.systems",
+        "configurators": "Konfiguratorlar",
+        "howWeWork": "Biz qanday ishlaymiz",
+        "paymentMethods": "To'lov usullari",
+        "deliveryTerms": "Yetkazib berish shartlari",
+        "warrantyService": "Kafolat xizmati",
+        "productReturn": "Mahsulotni qaytarish",
+        "faq": "Savol-javoblar",
+        "technicalSupport": "Texnik yordam",
+        "knowledgeBase": "Ma'lumotlar bazasi",
+        "recommended": "Tavsiya etamiz",
+        "newArrivals": "Yangi kelganlar",
+        "discountedProducts": "Chegirmadagi mahsulotlar",
+        "popular": "Mashhur",
+        "new": "Yangi",
+        "achievements": "Yutuqlarimiz",
+        "companyNAG": "NAG KOMPANIYASI",
+        "contacts": "Kontaktlar",
+        "bankDetails": "Bank rekvizitlari",
+        "partners": "Hamkorlar",
+        "onlineSupport": "Onlayn yordam",
+        "extendedWarranty": "Kengaytirilgan kafolat",
+        "projects": "LOYIHALAR",
+        "nagConference": "NAG konferensiyasi",
+        "yourOffice": "Sizning ofisingiz",
+        "tashkent": "Toshkent",
+        "chilonzor": "Chilonzor",
+        "popular_categories": "Ommabop kategoriyalar",
+  "products": "mahsulotlar",
+  "category1": "Fiksatsiyalangan kommutatorlar",
+  "category2": "On-line UPS (IBP)",
+  "category3": "IP Videokameralar",
+  "category4": "Optik kabel FTTH/FTTx",
+  "category5": "Optik tolali payvandlash apparatlari",
+  "category6": "Stellajli serverlar",
+  "category7": "Korporativ mijozlar uchun marshrutizatorlar",
+  "category8": "SFP modullari",
+  "category9": "Optik patch-kordlar",
+  "category10": "Telekommunikatsiya devor shkaflari",
+  "category11": "Avtomatlashtirish va monitoring",
+  "category12": "Barcha katalogni ko'rish",  "works": "Xizmatlar",
+  "newsItem1": "Yangi SNR-FS-60x payvandlash uskunalari omborda mavjud",
+  "newsItem2": "Maqolani o'qing: PoE nima va u nima uchun kerak?",
+  "newsItem3": "Maqolani o'qing: PoE nima?",
+  "project1": "Snr.systems",
+  "project2": "Konfiguratorlar",
+  "work1": "To'lov usullari",
+  "work2": "Yetkazib berish shartlari",
+  "work3": "Kafolat xizmati",
+  "work4": "Mahsulotni qaytarish",
+  "work5": "Savol va javoblar",
+  "work6": "Texnik yordam",
+  "work7": "Ma'lumotlar bazasi",
+  "work8": "Konfiguratorlar",
+  "sale": "Chegirma",
+  "discount": "Aksiya",
+     
+      
+    "headertext1":"Ruxsatsiz foydalanuvchilar savati 7 kun davomida saqlanadi. Iltimos,",
+    "headertext2":"Ro'yhatdan o'tish",
+    "abouttext": "NAG telekommunikatsiya, sanoat va biznes kompaniyalariga keng ko'lamli muammolarni hal qilish uchun samarali echimlar va uskunalar taklif qiluvchi ishonchli va halol hamkordir. Biz tarmoq infratuzilmasini joylashtirish, uni modernizatsiya qilish va masshtablash uchun butlovchi qismlar va apparat-dasturiy tizimlarni (HSS) ulgurji va chakana savdosini amalga oshiramiz.",
+    
+        "aboutItem1": "Bizning rasmiy saytda biz uskunalarni nafaqat o'z savdo belgilari ostida, balki yetakchi xalqaro telekommunikatsiya uskunalari ishlab chiqaruvchilar tomonidan ishlab chiqilgan mahsulotlarni ham sotamiz.",
+        "aboutItem2": "«NAG» do'konida mingdan ortiq brendlar va 20 mingdan ziyod mahsulot nomlari mavjud.",
+        "aboutItem3": "SNR savdo belgisi ma'lumot uzatishning simli tarmoqlarini, xavfsizlik va videokuzatuv tizimlarini, simsiz tarmoqlarni va ma'lumotlar markazlarini tashkil qilish uchun keng assortimentdagi uskunalar va qismlarni o'z ichiga oladi.",
+        "aboutItem4": "Bir necha yil avval tashkil etilgan «NAGTEX» sho'ba korxonasi qimmat import analoglarini almashtira oladigan telekommunikatsiya uskunalarini ishlab chiqadi va ishlab chiqaradi.",
+
+        
+            "footer": {
+              "companyTitle": "KOMPANIYA NAG",
+              "aboutUs": "Kompaniya haqida",
+              "news": "Yangiliklar",
+              "contacts": "Kontaktlar",
+              "bankDetails": "Bank rekvizitlari",
+              "partners": "Hamkorlar",
+              
+              "supportTitle": "QO'LLAB-QUVVATLASH",
+              "onlineSupport": "Onlayn qo'llab-quvvatlash",
+              "paymentTerms": "To'lov shartlari",
+              "deliveryTerms": "Yetkazib berish shartlari",
+              "warrantyService": "Kafolat xizmati",
+              "extendedWarranty": "Kengaytirilgan kafolat",
+          
+              "projectsTitle": "LOYIHALAR",
+              "snrSystems": "snr.systems",
+              "nagConference": "NAG.conference",
+              "configurators": "Konfiguratorlar",
+          
+              "officeTitle": "SIZNING OFISINGIZ",
+              "tashkent": "Toshkent",
+              "phone": "+998 999999999",
+              "website": "sectortechnology.uz",
+              "address": "Toshkent, Chilonzor",
+          
+              "copyright": "© 2022–2025 sectortechnology.uz",
+              "privacyPolicy": "Maxfiylik siyosati",
+              "personalDataPolicy": "Shaxsiy ma'lumotlarni qayta ishlash siyosati"
+            
+          },
+          
+          
+            "sidebar": {
+              "news": "Yangiliklar",
+              "projects": "Loyihalarimiz",
+              "works": "Ishlarimiz",
+              "newsItems": [
+                { "title": "SNR-FS-60x payvandlash apparatlari omborda mavjud", "date": "2024 yil 18 aprel" },
+                { "title": "Maqola: PoE nima va u nima uchun kerak?", "date": "2024 yil 29 mart" },
+                { "title": "Maqola: PoE nima?", "date": "2024 yil 9 mart" }
+              ],
+              "projectsItems": [
+                { "title": "Snr.systems" },
+                { "title": "Konfiguratorlar" }
+              ],
+              "worksItems": [
+                { "title": "To'lov usullari" },
+                { "title": "Yetkazib berish shartlari" },
+                { "title": "Kafolatli xizmat" },
+                { "title": "Mahsulotni qaytarish" },
+                { "title": "Savollar va javoblar" },
+                { "title": "Texnik yordam" },
+                { "title": "Ma'lumotlar bazasi" },
+                { "title": "Konfiguratorlar" }
+              ]
+            
+          }
+          
+          
+          
+      
+      
+}

@@ -12,9 +12,12 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import categoryimg1 from '../imgs/categoryimg1.png'
-import productsimg1 from '../imgs/productsimg1.png'
-import productsimg2 from '../imgs/productsimg2.png'
+// import categoryimg1 from '../imgs/categoryimg1.png'
+// import productsimg1 from '../imgs/productsimg1.png'
+// import productsimg2 from '../imgs/productsimg2.png'
+import productsimg1 from '../imgs/sector1.jpg'
+import productsimg2 from '../imgs/sector2.jpg'
+import productsimg3 from '../imgs/sector3.jpg'
 
 function Banner() {
   return (
@@ -36,11 +39,15 @@ function Banner() {
         className="mySwiper"
         >
         <SwiperSlide>
-            <img src={productsimg1} alt="" />
+            <img className='mx-auto w-[90%] sm:h-[400px]' src={productsimg1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={productsimg2} alt="" />
+          <img className='mx-auto w-[90%] sm:h-[400px]' src={productsimg2} alt="" />
         </SwiperSlide>
+        <SwiperSlide>
+          <img className='mx-auto w-[90%] sm:h-[400px]' src={productsimg3} alt="" />
+        </SwiperSlide>
+      
         
       </Swiper>
           </div>

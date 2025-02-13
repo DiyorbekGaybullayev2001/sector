@@ -9,6 +9,7 @@ import logo from '../../public/logo.png'
 import uz from '../imgs/flag-uzb.png'
 import ru from '../imgs/flag-ru.png'
 import { Search, User, ShoppingCart, Heart, Percent, MessageSquare, BarChart3, AlignJustify, X } from "lucide-react";
+import i18n from '../i18n'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -16,6 +17,13 @@ const Home = () => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen)
   };
+  // const { t, i18n} = useTranslation();
+  // const luangages = localStorage.getItem('i18nextLng')
+  const handlechange = (event) =>{
+    const selectedluangage = event.target.value
+    i18n.changeLanguage(selectedluangage);
+  };
+
   return (
     <div className='relative'>
       {/* Sidebar */}
@@ -27,16 +35,18 @@ const Home = () => {
       ><br />
         <img src={logo} alt="" /><br />
         <ul className="p-[5px]">
-          <li className="mb-4">
-            <a href="#">
+          <select name="Lng" id="lng" onChange={handlechange} className='bg-[#0054aee3]'>
+            {/* <option value="">Lng</option> */}
+            <option value="ru">RU</option>
+            <option value="uz">UZ</option>
+          </select>
+          <br /><br />
+              {/* <img src={ru} alt="" /> */}
+          {/* <li className="mb-4" value={uz} onChange={handlechange}>
               <img src={uz} alt="" />
-            </a>
           </li>
-          <li className="mb-4">
-            <a href="#">
-              <img src={ru} alt="" />
-            </a>
-          </li>
+          <li className="mb-4" value={ru} onChange={handlechange}>
+          </li> */}
           <li className="mb-4">
             <a href="#"><Heart/></a>
           </li>
@@ -46,9 +56,26 @@ const Home = () => {
           <li className="mb-4">
             <a href="#"><Percent/></a>
           </li>
+
           <li className="mb-4">
-            <a href="#"><MessageSquare/></a>
+            <a href="#"><ShoppingCart/></a>
           </li>
+
+          <li className="mb-4">
+            <a 
+              href="#replain" 
+              className="replain-link" 
+              data-title="Чат"
+              style={{ 
+                all: 'unset',
+                cursor: 'pointer',
+              }}
+            />   
+          </li>
+          {/* <li id='chat' className="mb-4">
+          <a class="replain-link" href="#replain" data-title="" data-border="" data-background="" data-color=""></a>
+          </li> */}
+        
         </ul>
         {/* Toggle Button */}
       </div>
