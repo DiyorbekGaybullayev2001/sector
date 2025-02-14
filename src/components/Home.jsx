@@ -10,6 +10,7 @@ import uz from '../imgs/flag-uzb.png'
 import ru from '../imgs/flag-ru.png'
 import { Search, User, ShoppingCart, Heart, Percent, MessageSquare, BarChart3, AlignJustify, X } from "lucide-react";
 import i18n from '../i18n'
+import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -48,7 +49,9 @@ const Home = () => {
           <li className="mb-4" value={ru} onChange={handlechange}>
           </li> */}
           <li className="mb-4">
-            <a href="#"><Heart/></a>
+            <NavLink to={'/wishes'}>
+              <a href="#"><Heart/></a>
+            </NavLink>
           </li>
           <li className="mb-4">
             <a href="#"><BarChart3/></a>
@@ -58,7 +61,9 @@ const Home = () => {
           </li>
 
           <li className="mb-4">
-            <a href="#"><ShoppingCart/></a>
+            <NavLink to={'/cart'}>
+              <a href="#"><ShoppingCart/></a>
+            </NavLink>
           </li>
 
           <li className="mb-4">
